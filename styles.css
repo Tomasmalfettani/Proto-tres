@@ -1,0 +1,107 @@
+/* Header */
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.7s;
+    padding: 10px;
+    z-index: 10;
+    background-color: white;
+}
+
+.logo-menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-menu-container ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-menu-container ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo-menu-container li {
+    margin-right: 10px;
+}
+
+.activo {
+    font-weight: bold;
+}
+
+header i {
+    font-size: 22px;
+    color: #cd8b91;
+    display: none;
+}
+
+.imgLogo {
+    width: 200px;
+}
+
+/* Menu desplegable */
+
+.menuOverlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+    color: white;
+}
+
+.menuOverlay.open {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+.menuOverlay h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.menuOverlay ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menuOverlay li {
+    margin-bottom: 10px;
+}
+
+/* Medias */
+
+@media (max-width: 768px) {
+    .linkPc {
+        display: none; 
+    }
+
+    header i {
+        display: block;
+        
+    }
+}
+
+@media (min-width: 769px) {
+    header i {
+        display: none;
+    }
+
+}
