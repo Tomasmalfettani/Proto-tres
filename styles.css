@@ -1,5 +1,4 @@
 /* Header */
-
 header {
     top: 0;
     left: 0;
@@ -8,46 +7,32 @@ header {
     padding: 10px;
     z-index: 10;
     background-color: white;
-}
-
-.logo-menu-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo-menu-container ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.logo-menu-container ul a {
-    text-decoration: none;
-    color: black;
-}
-
-.logo-menu-container li {
-    margin-right: 10px;
-}
-
-.activo {
-    font-weight: bold;
+    font-family: 'Lato', sans-serif;
 }
 
 header i {
-    font-size: 22px;
+    font-size: 32px;
     color: #cd8b91;
     display: none;
+    margin-right: 10px;
 }
 
 .imgLogo {
     width: 200px;
 }
 
-/* Menu desplegable */
+.linkPc a {
+    color: black;
+    text-decoration: none;
+}
 
+.linkPc .activo {
+    font-weight: bold;
+    color: #cd8b91; 
+}
+
+
+/* Menu desplegable */
 .menuOverlay {
     position: fixed;
     top: 0;
@@ -64,6 +49,7 @@ header i {
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0s linear 0.3s;
     color: white;
+    font-family: 'Lato', sans-serif;
 }
 
 .menuOverlay.open {
@@ -86,8 +72,23 @@ header i {
     margin-bottom: 10px;
 }
 
-/* Medias */
+.menuOverlay a {
+    color: #cd8b91;
+    text-decoration: none;
+    font-size: 28px;
+}
 
+/* Main */
+
+.pantallaCompleta {
+    height: 100vh;
+}
+
+.fondoRosa {
+    background-color: #cd8b91;
+}
+
+/* Medias */
 @media (max-width: 768px) {
     .linkPc {
         display: none; 
@@ -103,5 +104,4 @@ header i {
     header i {
         display: none;
     }
-
 }
