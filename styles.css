@@ -88,6 +88,14 @@ header i {
     background-color: #cd8b91;
 }
 
+.fondoBlanco {
+    background-color: #f1f1f1;
+}
+
+.fotoDra {
+    width: 493px;
+}
+
 /* Medias */
 @media (max-width: 768px) {
     .linkPc {
