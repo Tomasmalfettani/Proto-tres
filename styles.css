@@ -1,115 +1,86 @@
-/* Header */
-header {
-    top: 0;
-    left: 0;
-    width: 100%;
-    transition: 0.7s;
-    padding: 10px;
-    z-index: 10;
-    background-color: white;
-    font-family: 'Lato', sans-serif;
-}
-
-header i {
-    font-size: 32px;
-    color: #cd8b91;
-    display: none;
-    margin-right: 10px;
-}
-
-.imgLogo {
-    width: 200px;
-}
-
-.linkPc a {
-    color: black;
-    text-decoration: none;
-}
-
-.linkPc .activo {
-    font-weight: bold;
-    color: #cd8b91; 
-}
-
-
-/* Menu desplegable */
-.menuOverlay {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
-    color: white;
-    font-family: 'Lato', sans-serif;
-}
-
-.menuOverlay.open {
-    opacity: 1;
-    visibility: visible;
-    transition-delay: 0s;
-}
-
-.menuOverlay h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-}
-
-.menuOverlay ul {
-    list-style: none;
+/* estilos y estilos básicos */
+body,
+ul,
+li {
+    margin: 0;
     padding: 0;
+    list-style: none;
 }
 
-.menuOverlay li {
-    margin-bottom: 10px;
+body {
+    font-family: Arial, sans-serif;
 }
 
-.menuOverlay a {
+/* header */
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    font-family: 'Lato', sans-serif;
+    z-index: 100; /* Asegura que el header esté por encima de otros elementos */
+    position: sticky;
+    top: 0; /* Ancla el header en la parte superior */
+}
+
+.logo img {
+    max-width: 200px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
     color: #cd8b91;
     text-decoration: none;
-    font-size: 28px;
+    font-weight: bold;
 }
 
-/* Main */
-
-.pantallaCompleta {
-    height: 100vh;
+/* sombra scroll */
+#site-header {
+    box-shadow: none;
+    transition: box-shadow 0.3s ease;
 }
 
-.fondoRosa {
-    background-color: #cd8b91;
+#site-header.scrolled {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.fondoBlanco {
-    background-color: #f1f1f1;
-}
-
-.fotoDra {
-    width: 493px;
-}
-
-/* Medias */
-@media (max-width: 768px) {
-    .linkPc {
-        display: none; 
+/* responsive */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
     }
 
-    header i {
-        display: block;
-        
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .logo img {
+        max-width: 175px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 15px 15px;
     }
 }
 
-@media (min-width: 769px) {
-    header i {
-        display: none;
+/* galaxy fold */
+@media screen and (max-width: 281px) {
+    nav ul li {
+        margin: 15px 8px;
     }
 }
