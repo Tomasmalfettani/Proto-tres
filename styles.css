@@ -139,12 +139,14 @@ main {
 
 /* servicios */
 .pantallaRosa {
-    background-color: #ffcccc ;
+    background-color: #ffcccc;
 }
 
 
+
 /* responsive */
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 913px) {
     .pc {
         display: none;
     }
@@ -176,12 +178,57 @@ main {
         margin: 15px 15px;
     }
 
+    .pantallaRosa {
+        margin-top: 275px;
+    }
 }
+
+@media (min-width: 850px) and (max-width: 913px) {
+    .pantallaRosa {
+        margin-top: 0px;
+    }
+}
+
+
+@media (min-width: 711px) and (max-width: 913px) {
+    .imgDra {
+        width: 475px;
+    }
+
+    .titulo-principal {
+        font-size: 22px;
+    }
+
+    .titulo-secundario {
+        font-size: 68px;
+    }
+
+    .parrafo {
+        font-size: 24px;
+    }
+}
+
 
 /* se */
 @media screen and (max-width: 376px) {
     header {
         font-size: 14px;
+    }
+
+    .titulo-principal {
+        font-size: 14px;
+    }
+
+    .titulo-secundario {
+        font-size: 52px;
+    }
+
+    .parrafo {
+        font-size: 16px;
+    }
+
+    .pantallaRosa {
+        margin-top: 310px;
     }
 }
 
@@ -198,11 +245,11 @@ main {
     .titulo-principal {
         font-size: 14px;
     }
-    
+
     .titulo-secundario {
         font-size: 52px;
     }
-    
+
     .parrafo {
         font-size: 16px;
     }
@@ -211,9 +258,13 @@ main {
         font-size: 16px;
         padding: 6px 16px;
     }
-    
+
     .boton-inicio-2 {
         font-size: 16px;
         padding: 6px 16px;
+    }
+
+    .pantallaRosa {
+        margin-top: 300px;
     }
 }
