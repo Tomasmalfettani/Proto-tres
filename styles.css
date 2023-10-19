@@ -1,4 +1,9 @@
 /* estilos y estilos básicos */
+html {
+    scroll-behavior: smooth;
+    background-color: #fcfcfc;
+}
+
 body,
 ul,
 li {
@@ -8,7 +13,7 @@ li {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 /* header */
@@ -65,6 +70,31 @@ main {
 .celular {
     display: none;
 }
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 11;
+}
+
+.whatsapp-icon:hover {
+    background-color: #128c7e;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 
 /* inicio */
 
@@ -140,6 +170,41 @@ main {
 /* servicios */
 .pantallaRosa {
     background-color: #ffcccc;
+}
+
+.servicios-section {
+    background-color: #ffcccc;
+    padding: 50px 0;
+}
+
+.servicios-titulo {
+    font-size: 30px;
+    color: #cd8b91;
+    font-weight: bold;
+}
+
+.servicios-descripcion {
+    font-size: 18px;
+    color: #666;
+}
+
+.servicios-boton {
+    font-size: 20px;
+    background-color: #a6576b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.servicios-boton:hover {
+    background-color: #cd8b91;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.servicios-imagen {
+    border: 6px solid #a6576b;
 }
 
 
