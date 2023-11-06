@@ -95,9 +95,6 @@ main {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-
-/* inicio */
-
 .imgDra {
     width: 375px;
 }
@@ -167,7 +164,7 @@ main {
     position: relative;
 }
 
-/* Estilos para la sección de servicios */
+/* estilos para la sección de servicios */
 .pantallaRosa {
     background-color: #ffcccc;
 }
@@ -219,23 +216,23 @@ main {
     margin-top: 20px;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    border: none; /* Agrega esta línea para eliminar el borde */
+    border: none;
 }
 
 .service-card a:hover {
     background-color: #cd8b91;
 }
 
-/* Estilos para la capa adicional que se muestra al hacer clic en "Más Información" */
+/* estilos para la capa adicional que se muestra al hacer clic en "Más Información" */
 .service-card .additional-info-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.9); /* Fondo semitransparente blanco */
-    display: none; /* Oculta la capa inicialmente */
-    z-index: 2; /* Coloca esta capa sobre la tarjeta */
+    background: rgba(255, 255, 255, 0.9);
+    display: none;
+    z-index: 2;
     text-align: center;
     border-radius: 15px;
 }
@@ -249,9 +246,11 @@ main {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;/
 }
-/* responsive */
 
+/* responsive */
 @media screen and (max-width: 913px) {
     .pc {
         display: none;
