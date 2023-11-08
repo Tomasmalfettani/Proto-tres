@@ -191,7 +191,7 @@ main {
 .service-card img {
     max-width: 100%;
     border-radius: 10px;
-    height: 650px;
+    height: 750px;
     object-fit: cover;
 }
 
@@ -209,7 +209,7 @@ main {
 .service-card button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #a6576b;
+    background-color: #cd8b91;
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
@@ -217,10 +217,6 @@ main {
     font-weight: bold;
     transition: background-color 0.3s ease;
     border: none;
-}
-
-.service-card a:hover {
-    background-color: #cd8b91;
 }
 
 /* estilos para la capa adicional que se muestra al hacer clic en "Más Información" */
@@ -248,6 +244,18 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 100%;
     height: 100%;/
+}
+
+.additional-info li {
+    list-style: none;
+}
+
+
+.additional-info li::before {
+    content: '\2022';
+    color: #a6576b;
+    font-size: 20px;
+    margin-right: 10px;
 }
 
 /* responsive */
